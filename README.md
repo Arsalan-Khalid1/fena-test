@@ -20,11 +20,14 @@ Follow these steps to set up and run the project:
    ```bash
    docker build -t app ./app/
    docker build -t email-sender ./email_sender/
-   docker build -t client ./client/
 
    ```
 
 3. Start the project using Docker Compose::
+
    ```bash
    docker-compose up
    ```
+
+4. open browser::
+   localhost:8080
