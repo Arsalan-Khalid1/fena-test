@@ -16,7 +16,7 @@ function App() {
     jobTracking();
     setInterval(() => {
       jobTracking();
-    }, 4000);
+    }, 2000);
   }, []);
 
   const jobTracking = async () => {
