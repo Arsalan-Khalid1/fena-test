@@ -22,7 +22,7 @@ services:
   app:
     image: "app"
     ports:
-      - 5000:5000
+      - 8080:8080
     volumes:
       - ./app/src/:/usr/src/app/src
     depends_on:
@@ -37,13 +37,5 @@ services:
       - ./email_sender/src/:/usr/src/app/src
     depends_on:
       - kafka
-    networks:
-      - app-tier
-  client:
-    image: "client"
-    volumes:
-      - ./client/:/usr/src/app/
-    ports:
-      - 3000:3000
     networks:
       - app-tier

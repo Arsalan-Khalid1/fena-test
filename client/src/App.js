@@ -22,7 +22,7 @@ function App() {
   const jobTracking = async () => {
     try {
       const response = await axios({
-        url: "http://localhost:5000/job",
+        url: "http://localhost:8080/job",
         method: "GET",
       });
       setJobs(response.data);
@@ -33,7 +33,7 @@ function App() {
     try {
       setLoading(true);
       const response = await axios({
-        url: "http://localhost:5000/job",
+        url: "http://localhost:8080/job",
         method: "POST",
         data: {
           emailCount: numEmails,
