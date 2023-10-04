@@ -15,7 +15,14 @@ Follow these steps to set up and run the project:
 
    ```
 
-2. Build the Docker images for the project components:
+2. Create the network layer and setup bridge:
+
+   ```bash
+   docker network create app-tier --driver bridge
+
+   ```
+
+3. Build the Docker images for the project components:
 
    ```bash
    docker build -t app ./app/
@@ -23,11 +30,11 @@ Follow these steps to set up and run the project:
 
    ```
 
-3. Start the project using Docker Compose::
+4. Start the project using Docker Compose::
 
    ```bash
    docker-compose up
    ```
 
-4. open browser::
+5. open browser::
    localhost:8080
