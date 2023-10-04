@@ -38,3 +38,7 @@ Follow these steps to set up and run the project:
 
 5. open browser::
    localhost:8080
+
+### NOTE
+
+Kafka connection does not setup on first 2-3 times, if that is the case then stop the images and compose again few times
